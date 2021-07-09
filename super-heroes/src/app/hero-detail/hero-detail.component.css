@@ -1,0 +1,12 @@
+.header {
+    font-size: larger;
+    color:black
+}
+
+table, td, th, tr {
+    border: cadetblue solid 2px;
+}
+
+td,th,tr{
+    background-color: cornsilk;
+}

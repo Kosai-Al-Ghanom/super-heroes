@@ -1,0 +1,148 @@
+<div *ngIf="hero">
+    <h1>General</h1>
+  <table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Slug</th>      
+    </tr>
+    <tr >
+        <th>{{hero.id}}</th>
+        <th>{{hero.name}}</th>
+        <th>{{hero.slug}}</th>
+      
+    </table>
+    <h1>Powerstats</h1>
+    <table class="table">
+        <tr>
+            <th>Intelligence</th>
+            <th>Strength</th>
+            <th>Speed</th>  
+            <th>Surability</th>
+            <th>Power</th>
+            <th>Combat</th>         
+        </tr>
+        <tr >
+            <th>{{hero.powerstats.intelligence}}</th>
+            <th>{{hero.powerstats.strength}}</th>
+            <th>{{hero.powerstats.speed}}</th>  
+            <th>{{hero.powerstats.durability}}</th>
+            <th>{{hero.powerstats.power}}</th>
+            <th>{{hero.powerstats.combat}}</th>     
+          
+        </table>
+        <h1>Appearance</h1>
+    <table class="table">
+        <tr class="header">
+            <th>Gender</th>
+            <th>Race</th>
+            <th>Height</th>  
+            <th>Weight</th>
+            <th>Eye Color</th>
+            <th>Hair Color</th>            
+        </tr>
+        <tr >
+            <th>{{hero.appearance.gender}}</th>
+            <th>{{hero.appearance.race}}</th>
+            <th>{{hero.appearance.height}}</th>  
+            <th>{{hero.appearance.weight}}</th>
+            <th>{{hero.appearance.eyeColor}}</th>
+            <th>{{hero.appearance.hairColor}}</th>     
+          
+        </table>
+        <h1>Biography</h1>
+    <table class="table">
+        <tr class="header">
+            <th>FullName</th>
+            <th>AlterEgos</th>
+            <th>Aliases</th>  
+            <th>Place Of Birth</th>
+            <th>First Appearance</th>
+            <th>Publisher</th>     
+            <th>Alignment</th>      
+        </tr>
+        <tr >
+            <th>{{hero.biography.fullName}}</th>
+            <th>{{hero.biography.alterEgos}}</th>
+            <th>{{hero.biography.aliases}}</th>  
+            <th>{{hero.biography.placeOfBirth}}</th>
+            <th>{{hero.biography.firstAppearance}}</th>
+            <th>{{hero.biography.publisher}}</th>     
+            <th>{{hero.biography.alignment}}</th>
+          
+        </table>
+
+        <h1>Work</h1>
+    <table class="table">
+        <tr>
+            <th class="header">Occupation</th>
+            <td>{{hero.work.occupation}}</td>     
+        </tr>
+        <tr >
+            <th class="header">Base</th>
+            <td>{{hero.work.base}}</td>
+          
+        </table>
+
+        <h1>Connections</h1>
+    <table class="table">
+        <tr>
+            <th class="header">Group Affiliation</th>
+            <td>{{hero.connections.groupAffiliation}}</td>     
+        </tr>
+        <tr >
+            <th class="header">Relatives</th>
+            <td>{{hero.connections.relatives}}</td>
+          
+        </table>
+
+        <h1>Images</h1>
+    <ul>
+            <li><img src={{hero.images.xs}}></li>
+            <li><img src={{hero.images.sm}}></li>     
+            <li><img src={{hero.images.md}}></li>
+            <li><img src={{hero.images.lg}}></li>
+    </ul>
+</div>
+<!-- <table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Slug</th>
+        <th>appearance</th>
+        <th>powerstats</th>
+        <th>biography</th>
+        <th>work</th>
+        <th>connections</th>
+        <th>images</th>        
+    </tr>
+    <tr *ngFor="let hero of heroes">
+        <th>{{hero.id}}</th>
+        <th>{{hero.name}}</th>
+        <th>{{hero.slug}}</th>
+        <table class="appearance">
+            <tr>
+                <th>Gender</th>
+                <th>Race</th>
+                <th>Height</th>
+                <th>Weight</th>
+                <th>Eye color</th>
+                <th>Hair color</th>
+            </tr>
+            <tr>
+                <th>{{hero.appearance.gender}}</th>
+                <th>{{hero.appearance.race}}</th>
+                <th>{{hero.appearance.height[0]}} - {{hero.appearance.height[1]}}</th>
+                <th>{{hero.appearance.weight[0]}} - {{hero.appearance.weight[1]}}</th>
+                <th>{{hero.appearance.eyeColor}}</th>
+                <th>{{hero.appearance.hairColor}}</th>
+            </tr>
+        </table>
+        <th>Appearance</th>
+        <th>{{hero.powerstats}}</th>
+        <th>{{hero.biography}}</th>
+        <th>{{hero.work}}</th>
+        <th>{{hero.connections}}</th>
+        <th>{{hero.images}}</th>        
+    </tr>
+</table> -->
