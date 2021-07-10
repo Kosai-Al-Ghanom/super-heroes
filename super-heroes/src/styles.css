@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-html {
-    background: url("./assets/background.jpg") no-repeat center center fixed;
+body {
+    background-color: rgb(208, 212, 218);
 
     
 }
+
+app-hero-detail {
+    position: absolute;
+    top: 200px;
+    left: 300px
+}
+

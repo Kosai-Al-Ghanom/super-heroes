@@ -1,5 +1,6 @@
-<div *ngIf="hero">
-    <h1>General</h1>
+<div *ngIf="hero" class="detailContainer">
+    <img src={{hero.images.lg}}>
+    <h1 class="title">General</h1>
   <table class="table">
     <tr>
         <th>ID</th>
@@ -12,7 +13,7 @@
         <th>{{hero.slug}}</th>
       
     </table>
-    <h1>Powerstats</h1>
+    <h1 class="title">Powerstats</h1>
     <table class="table">
         <tr>
             <th>Intelligence</th>
@@ -31,7 +32,7 @@
             <th>{{hero.powerstats.combat}}</th>     
           
         </table>
-        <h1>Appearance</h1>
+        <h1 class="title">Appearance</h1>
     <table class="table">
         <tr class="header">
             <th>Gender</th>
@@ -50,7 +51,7 @@
             <th>{{hero.appearance.hairColor}}</th>     
           
         </table>
-        <h1>Biography</h1>
+        <h1 class="title">Biography</h1>
     <table class="table">
         <tr class="header">
             <th>FullName</th>
@@ -72,7 +73,7 @@
           
         </table>
 
-        <h1>Work</h1>
+        <h1 class="title">Work</h1>
     <table class="table">
         <tr>
             <th class="header">Occupation</th>
@@ -84,7 +85,7 @@
           
         </table>
 
-        <h1>Connections</h1>
+        <h1 class="title">Connections</h1>
     <table class="table">
         <tr>
             <th class="header">Group Affiliation</th>
@@ -95,54 +96,6 @@
             <td>{{hero.connections.relatives}}</td>
           
         </table>
-
-        <h1>Images</h1>
-    <ul>
-            <li><img src={{hero.images.xs}}></li>
-            <li><img src={{hero.images.sm}}></li>     
-            <li><img src={{hero.images.md}}></li>
-            <li><img src={{hero.images.lg}}></li>
-    </ul>
+         
+    
 </div>
-<!-- <table class="table">
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Slug</th>
-        <th>appearance</th>
-        <th>powerstats</th>
-        <th>biography</th>
-        <th>work</th>
-        <th>connections</th>
-        <th>images</th>        
-    </tr>
-    <tr *ngFor="let hero of heroes">
-        <th>{{hero.id}}</th>
-        <th>{{hero.name}}</th>
-        <th>{{hero.slug}}</th>
-        <table class="appearance">
-            <tr>
-                <th>Gender</th>
-                <th>Race</th>
-                <th>Height</th>
-                <th>Weight</th>
-                <th>Eye color</th>
-                <th>Hair color</th>
-            </tr>
-            <tr>
-                <th>{{hero.appearance.gender}}</th>
-                <th>{{hero.appearance.race}}</th>
-                <th>{{hero.appearance.height[0]}} - {{hero.appearance.height[1]}}</th>
-                <th>{{hero.appearance.weight[0]}} - {{hero.appearance.weight[1]}}</th>
-                <th>{{hero.appearance.eyeColor}}</th>
-                <th>{{hero.appearance.hairColor}}</th>
-            </tr>
-        </table>
-        <th>Appearance</th>
-        <th>{{hero.powerstats}}</th>
-        <th>{{hero.biography}}</th>
-        <th>{{hero.work}}</th>
-        <th>{{hero.connections}}</th>
-        <th>{{hero.images}}</th>        
-    </tr>
-</table> -->

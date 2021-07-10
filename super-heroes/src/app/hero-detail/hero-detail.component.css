@@ -3,10 +3,22 @@
     color:black
 }
 
-table, td, th, tr {
-    border: cadetblue solid 2px;
+table {
+    width: 100%;
+}
+tr,th{
+    border: rgb(0, 185, 185) solid 1px;;
 }
 
-td,th,tr{
-    background-color: cornsilk;
+.title{
+    border-bottom: solid 2px rgb(243, 230, 46);
 }
+
+.detailContainer{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
