@@ -34,7 +34,7 @@ export class HeroesComponent implements OnInit {
   Search(): void{
     if(this.name != ""){
     this.heroes = this.heroes.filter(res=>{
-      return res.name.toLocaleLowerCase().match(this.name.trim())
+      return res.name.toLocaleLowerCase().match(this.name.trim().toLocaleLowerCase())
     })
   } else if(this.name == ""){
     this.ngOnInit();
