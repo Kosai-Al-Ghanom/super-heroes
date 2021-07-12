@@ -9,7 +9,7 @@ export interface Hero {
       durability: number;
       power: number;
       combat: number;
-    };
+    },
     appearance: {
       gender: string;
       race:string;
@@ -18,29 +18,29 @@ export interface Hero {
         ];
       weight: [
         lb:number, kg:number
-      ];
+      ],
       eyeColor: string;
       hairColor: string;
-    };
+    },
     biography: {
       fullName: string;
       alterEgos: string;
       aliases: [
         nm:string
-      ];
+      ],
       placeOfBirth: string;
       firstAppearance: string;
       publisher: string;
       alignment: string;
-    };
+    },
     work: {
       occupation: string;
       base: string;
-    };
+    },
     connections: {
       groupAffiliation: string;
       relatives: string;
-    };
+    },
     images: {
       xs: string;
       sm:string;
